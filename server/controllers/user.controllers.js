@@ -18,7 +18,7 @@ module.exports = {
             })
     },
     addUser: (req, res) => {
-        User.create(req.body.initialState) //initialState
+        User.create(req.body.state)
             .then((result) => {
                 res.json(result)
             }).catch((err) => {

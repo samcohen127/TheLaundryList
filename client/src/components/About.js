@@ -5,7 +5,7 @@ const About = () => {
     <div className='py-10'>
       <h1 className='text-4xl '>About us</h1><br />
       <p className='font-bold'>Hello and Welcome to TheLaundryList.com </p><br />
-      <p>The Laundry List is your solution for used industrial laundry equipment, parts (new and used), and other production equipment that we currently have for sale around the United States, Canada, and Mexico. As a linen rental, uniform rental, industrial, hospitality, healthcare, garment finishing, or latex laundry we can solve your needs for used washroom and finishing production equipment.</p><br />
+      {/* <p>The Laundry List is your solution for used industrial laundry equipment, parts (new and used), and other production equipment that we currently have for sale around the United States, Canada, and Mexico. As a linen rental, uniform rental, industrial, hospitality, healthcare, garment finishing, or latex laundry we can solve your needs for used washroom and finishing production equipment.</p><br />
       <p>Our inventory of equipment falls into one of the following categories:</p>
       <ul>
         <li>Washer-Extractors</li>
@@ -28,8 +28,20 @@ const About = () => {
       <p>Freight can easily be arranged throughout North America and any destination in the world. Rigging too can be arranged throughout most of the United States and Canada.</p><br />
       <p>For all who do not know us, references are certainly available. Please feel free to contact any and all of our customers, we encourage it.</p><br />
       <p>As a company servicing the Laundry Industry, our goal is simple:</p><br />
-      <p>To exceed our clients' expectations. Commitment to our company's development and growth, continuous improvement, teamwork, and innovation will guide our efforts to achieve a standard of excellence.</p>
-    </div >
+      <p>To exceed our clients' expectations. Commitment to our company's development and growth, continuous improvement, teamwork, and innovation will guide our efforts to achieve a standard of excellence.</p> */}
+      <p>There are still a bunch of things to implement before making the site live</p>
+      <ul>
+        <li>Sort of inventory</li>
+        <li>Better CSS</li>
+        <li>Protecting Routes</li>
+        <li>New Logo</li>
+        <li>reCAPTCHA</li>
+        <li>Hot Tips Blog</li>
+        <li>Featured Machines - Including a way to easily feature a machine </li>
+        <li></li>
+        
+      </ul><br/>
+    </div>
   )
 }
 

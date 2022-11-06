@@ -3,7 +3,7 @@ const cors = require('cors')
 const express = require('express')
 const app = express()
 require('dotenv').config()
-// const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser')
 
 
 //require config file
@@ -14,11 +14,11 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 //allows for cookies
-// app.use(cookieParser())
+app.use(cookieParser())
 
 app.use(
     cors({
-        origin: "http://localhost:3000", credentials:true
+        origin: "http://localhost:3000", credentials: true
     }),
 )
 
@@ -30,3 +30,5 @@ require('./routes/user.routes')(app)
 app.listen(PORT, () => {
     console.log(`Server is up and running on port ${PORT}`)
 })
+
+

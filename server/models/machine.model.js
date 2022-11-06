@@ -22,20 +22,20 @@ const MachineSchema = mongoose.Schema({
         type: String,
         required: [true, 'Category is required'],
         enum: [
-                    'washers',
-                    'batchWashers',
-                    'dryers',
-                    'ironers',
-                    'flatwork',
-                    'garmentTunnels',
-                    'materialHandling',
-                    'airCompressors',
-                    'Documentary',
-                    'boilers',
-                    'wastewater',
-                    'misc',
-                    'carts'
-                ]
+            'washers',
+            'batchWashers',
+            'dryers',
+            'ironers',
+            'flatwork',
+            'garmentTunnels',
+            'materialHandling',
+            'airCompressors',
+            'Documentary',
+            'boilers',
+            'wastewater',
+            'misc',
+            'carts'
+        ]
     },
     quantity: {
         type: Number,
@@ -59,6 +59,10 @@ const MachineSchema = mongoose.Schema({
         type: String,
         required: [true, 'Asking Price is required']
     },
+    // image: {
+    //     type: String,
+    //     required: [true, 'Please add one image']
+    // }
 
 }, { timestamps: true })
 

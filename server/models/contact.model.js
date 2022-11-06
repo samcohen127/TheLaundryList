@@ -25,10 +25,10 @@ const ContactSchema = mongoose.Schema({
             'Provided phone number is invalid.'
         ]
     },
-    // regex validation: ^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$
 
     note: {
         type: String,
+        required: [true, 'Please provide a description of how we can help']
     },
 
 }, { timestamps: true })

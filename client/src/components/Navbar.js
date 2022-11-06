@@ -28,7 +28,8 @@ const Navbar = () => {
                 <NavLink to="/sell" className="m-3 hover:font-normal" >Sell</NavLink>
                 <NavLink to="/buy" className="m-3 hover:font-normal" >Buy</NavLink>
                 <NavLink to="/contact" className="m-3 hover:font-normal" >Contact</NavLink>
-                <NavLink to="/About" className="m-3 pb-5 hover:font-normal" >About</NavLink>
+                <NavLink to="/About" className="m-3 hover:font-normal" >About</NavLink>
+                <NavLink to="/Login" className="m-3 pb-5 hover:font-normal" >Login</NavLink>
             </div>
         </div>
     )

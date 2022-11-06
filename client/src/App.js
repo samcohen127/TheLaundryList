@@ -8,7 +8,9 @@ import EditForm from './components/EditForm';
 import Form from './components/Form'
 import Home from './components/Home';
 import Inventory from './components/Inventory';
+import Login from './components/Login';
 import Machine from './components/Machine';
+import Register from './components/Register';
 import Sell from './components/Sell';
 import Service from './components/Service';
 
@@ -28,7 +30,9 @@ function App() {
             <Route path='/form' element={<Form />} />
             <Route path='/home' element={<Home />} />
             <Route path='/inventory' element={<Inventory />} />
+            <Route path='/login' element={<Login />} />
             <Route path='/machine/:id' element={<Machine />} />
+            <Route path='/register' element={<Register />} />
             <Route path='/sell' element={<Sell />} />
             <Route path='/service' element={<Service />} />
           </Routes>
