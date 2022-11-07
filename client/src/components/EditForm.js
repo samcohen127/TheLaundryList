@@ -17,7 +17,7 @@ const EditForm = () => {
         contact: '',
         location: '',
         highLow: '',
-        image: ''
+        // image: ''
 
     };
 
@@ -47,8 +47,8 @@ const EditForm = () => {
                 return { ...state, location: action.payload }
             case "SET_HIGH_LOW":
                 return { ...state, highLow: action.payload }
-            case "SET_IMAGE":
-                return { ...state, image: action.payload }
+            // case "SET_IMAGE":
+            //     return { ...state, image: action.payload }
             default:
                 return state;
         }
@@ -71,7 +71,7 @@ const EditForm = () => {
             case "contact": dispatch({ type: "SET_CONTACT", payload: e.target.value }); break;
             case "location": dispatch({ type: "SET_LOCATION", payload: e.target.value }); break;
             case "highLow": dispatch({ type: "SET_HIGH_LOW", payload: e.target.value }); break;
-            case "image": dispatch({ type: "SET_IMAGE", payload: e.target.value }); break;
+            // case "image": dispatch({ type: "SET_IMAGE", payload: e.target.value }); break;
             default: return state
         }
     }
@@ -93,7 +93,7 @@ const EditForm = () => {
                 dispatch({ type: "SET_CONTACT", payload: res.data.contact })
                 dispatch({ type: "SET_LOCATION", payload: res.data.location })
                 dispatch({ type: "SET_HIGH_LOW", payload: res.data.highLow })
-                dispatch({ type: "SET_IMAGE", payload: res.data.image })
+                // dispatch({ type: "SET_IMAGE", payload: res.data.image })
             }).catch((err) => {
                 console.log(err)
             })
@@ -180,10 +180,10 @@ const EditForm = () => {
                 <input className='border border-gray-400' type="text" name='highLow' onChange={(e) => handleChange(e)} value={state.highLow} />
                 {errors.highLow ? <span className=''>{errors.highLow.message}</span> : null}
                 <br />
-                <label>Image</label>
+                {/* <label>Image</label>
                 <input  className='' type="file" name='image' onChange={(e) => handleChange(e)} value={state.image}/>
                 {errors.image ? <span className=''>{errors.image.message}</span> : null}
-                <br />
+                <br /> */}
                 <button className='bg-blue-500 hover:bg-blue-700 text-white font-thin py-2 px-4 rounded'>Submit</button>
             </form>
         </div>

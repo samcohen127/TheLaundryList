@@ -1,6 +1,7 @@
 const MachineController = require('../controllers/machine.controllers')
 // const { authenticate } = require('../config/jwt.config')
 const { addMachine, getAllMachines, getOneMachine, updateMachine, deleteMachine } = MachineController
+
 // const multer = require('multer')
 
 // const storage = multer.diskStorage({
@@ -15,7 +16,7 @@ const { addMachine, getAllMachines, getOneMachine, updateMachine, deleteMachine 
 
 // const upload = multer({
 //     storage: storage,
-//     limits: { fileSize: 10000000000 },
+//     // limits: { fileSize: 10000000000 },
 // });
 
 

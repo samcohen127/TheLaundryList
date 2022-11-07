@@ -17,7 +17,6 @@ const Form = () => {
         contact: '',
         location: '',
         highLow: '',
-        // uploadedImage: ''
     }
 
     const reducer = (state, action) => {
@@ -46,8 +45,6 @@ const Form = () => {
                 return { ...state, location: action.payload }
             case "SET_HIGH_LOW":
                 return { ...state, highLow: action.payload }
-            // case "SET_IMAGE":
-            //     return { ...state, uploadedImage: action.payload }
             default:
                 return state;
         }
@@ -70,7 +67,6 @@ const Form = () => {
             case "contact": dispatch({ type: "SET_CONTACT", payload: e.target.value }); break;
             case "location": dispatch({ type: "SET_LOCATION", payload: e.target.value }); break;
             case "highLow": dispatch({ type: "SET_HIGH_LOW", payload: e.target.value}); break;
-            // case "uploadedImage": dispatch({ type: "SET_IMAGE", payload: (e.target.value).slice(14) }); break;
             default: return state
         }
     }
@@ -156,10 +152,6 @@ const Form = () => {
                 <input className='border border-gray-400' type="text" name='highLow' onChange={(e) => handleChange(e)} value={state.highLow} />
                 {errors.highLow ? <span className=''>{errors.highLow.message}</span> : null}
                 <br />
-                {/* <label>Image</label>
-                <input className='border border-gray-400' type="file" name='uploadedImage' onChange={e=>console.log(e.target.files[0])} value={state.uploadedImage} />
-                {errors.uploadedImage ? <span className=''>{errors.uploadedImage.message}</span> : null}
-                <br /> */}
                 <button className='bg-blue-500 hover:bg-blue-700 text-white font-thin py-2 px-4 rounded'>Submit</button>
             </form>
         </div>
