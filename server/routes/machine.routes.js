@@ -26,9 +26,9 @@ module.exports = (app) => {
     //get one Machine
     app.get('/api/findById/:id', getOneMachine)
     //create a new Machine
-    app.post('/api/addMachine',  addMachine) //upload.single('image'),
+    app.post('/api/addMachine', addMachine) //upload.single('image'), authenticate,
     //update Machine
-    app.put('/api/updateMachine/:id', updateMachine)
+    app.put('/api/updateMachine/:id', updateMachine) //authenticate, 
     //delete Machine
-    app.delete('/api/delete/:id', deleteMachine)
+    app.delete('/api/delete/:id', deleteMachine) //authenticate,
 }

@@ -49,7 +49,7 @@ const Register = () => {
             state
         }, { withCredentials: true, credentials: 'include' })
             .then((res) => {
-                navigate('/home')
+                navigate('/')
             })
             .catch((err) => {
                 console.log(err)

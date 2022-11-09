@@ -43,7 +43,7 @@ const Contact = () => {
       obj
     },).then((res) => { //{ withCredentials: true }
       console.log(res)
-      navigate('/home')
+      navigate('/')
     }).catch((err) => {
       console.log(err)
       setErrors(err.response.data.errors)

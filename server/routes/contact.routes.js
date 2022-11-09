@@ -1,5 +1,4 @@
 const ContactController = require('../controllers/contact.controllers')
-// const { authenticate } = require('../config/jwt.config')
 const { addContact, getAllContacts, getOneContact, updateContact, deleteContact } = ContactController
 
 module.exports = (app) => {

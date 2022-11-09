@@ -7,11 +7,10 @@ import splash from '../img/splash.jpg'
 const Machine = () => {
     const { id } = useParams()
     const [machine, setMachine] = useState([])
-    const [contact, setContact] = useState(false)
     const navigate = useNavigate()
 
     const deleteHandler = (id) => {
-        axios.delete(`http://localhost:8001/api/delete/${id}`)
+        axios.delete(`http://localhost:8001/api/delete/${id}`, { withCredentials: true })
             .then((res) => {
                 console.log(res)
                 navigate('/inventory')

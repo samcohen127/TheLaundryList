@@ -77,7 +77,7 @@ const Form = () => {
         e.preventDefault()
         axios.post(('http://localhost:8001/api/addMachine'), {
             state
-        },).then((res) => { //{ withCredentials: true }
+        },{ withCredentials: true }).then((res) => {
             console.log(res)
             navigate('/inventory')
         }).catch((err) => {
@@ -89,7 +89,7 @@ const Form = () => {
     return (
         <div className='py-10'>
             <h1 className='text-4xl font-thin'>Add a new Machine</h1>
-            <form onSubmit={submitHandler} className='flex flex-col p-2 font-thin' enctype='multipart/form-data'>
+            <form onSubmit={submitHandler} className='flex flex-col p-2 font-thin' encType='multipart/form-data'>
                 <label>Year</label>
                 <input className='w-auto border border-gray-400' type="number" name='year' onChange={(e) => handleChange(e)} value={state.year} />
                 {errors.year ? <span className=''>{errors.year.message}</span> : null}

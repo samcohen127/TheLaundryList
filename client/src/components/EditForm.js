@@ -105,7 +105,7 @@ const EditForm = () => {
         e.preventDefault()
         axios.put((`http://localhost:8001/api/updateMachine/${id}`), {
             state
-        }).then((res) => { //, { withCredentials: true }
+        }, { withCredentials: true }).then((res) => {
             console.log(res)
             navigate('/inventory')
         }).catch((err) => {

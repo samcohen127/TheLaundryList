@@ -31,12 +31,13 @@ const About = () => {
       <p>To exceed our clients' expectations. Commitment to our company's development and growth, continuous improvement, teamwork, and innovation will guide our efforts to achieve a standard of excellence.</p> */}
       <p>There are still a bunch of things to implement before making the site live</p>
       <ul>
-        <li>Sort of inventory</li>
+        <li>Sort of Inventory</li>
         <li>Better CSS</li>
-        <li>Protecting Routes</li>
+        <li>Better Protecting Routes</li>
         <li>New Logo</li>
         <li>reCAPTCHA</li>
         <li>Hot Tips Blog</li>
+        <li>Image Upload</li>
         <li>Featured Machines - Including a way to easily feature a machine </li>
         <li></li>
         
